@@ -9,6 +9,21 @@
         }
     ],
     "require-dev": {
-        "orchestra/testbench": "^7.5"
+        "orchestra/testbench": "^7.5",
+        "mockery/mockery": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "qwerty\\Fontawesome\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "qwerty\\Fontawesome\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "erusev/parsedown": "^1.7",
+        "laravel/legacy-factories": "^1.3"
     }
 }
