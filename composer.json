@@ -1,0 +1,14 @@
+{
+    "name": "qwerty/fontawesome",
+    "description": "laravel font awesome package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hs-qwerty",
+            "email": "56368718+hs-qwerty@users.noreply.github.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^7.5"
+    }
+}
