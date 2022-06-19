@@ -11,17 +11,24 @@ class CreateFontsTable extends Migration
      */
     public function up()
     {
-        Schema::create('fonts', function (Blueprint $table) {
+        Schema::create($this->getTableName(), function (Blueprint $table) {
+            $table->id();
             $table->string('title');
             $table->string('icon');
             $table->timestamps();
         });
     }
+
+    public function getTableName()
+    {
+        return config('font.table_name');
+    }
+
     /**
      * Reverse the migrations.
      */
     public function down()
     {
-        Schema::drop('fonts');
+        Schema::dropIfExists($this->getTableName());
     }
 }

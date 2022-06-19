@@ -8,32 +8,43 @@ class QwertyFontAwesomeServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->registerResources();
-        $this->registerPublishg();
 
-        if ($this->app->runningInConsole()){
-
+        $this->resolveCommands();
+        if ($this->app->runningInConsole()) {
+            $this->publishResources();
         }
     }
 
     public function register()
     {
-        $this->commands([
-            Console\FontCommand::class,
-        ]);
+        $this->mergeConfigFrom(__DIR__ . '/../config/font.php', 'font');
+
+        $this->app->bind('font', function () {
+            return new FontMain();
+        });
+
     }
 
-    private function registerResources()
+    private function resolveCommands()
     {
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                Console\FontCommand::class,
+            ]);
+        }
     }
 
-    protected function registerPublishg()
+    protected function publishResources()
     {
         $this->publishes([
-            __DIR__.'/../database/migrations/0000_00_00_000000_create_fonts_table.php' => database_path('migrations/0000_00_00_000000_create_fonts_table.php'),
-        ], 'migrations');
-    }
+            __DIR__ . '/../config/font.php' => config_path('font.php'),
+        ], 'font-config');
 
+        $this->publishes([
+            __DIR__.'/../database/migrations/0000_00_00_000000_create_fonts_table.php' => database_path('migrations/0000_00_00_000000_create_fonts_table.php'),
+        ], 'font-migrations');
+
+    }
 
 }
