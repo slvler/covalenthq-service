@@ -47,7 +47,11 @@ class Build
         return $this;
     }
 
-
+    public function query(array $parameters): self
+    {
+        $this->options['query'] = $parameters;
+        return $this;
+    }
 
     /**
      * Send a GET request.
