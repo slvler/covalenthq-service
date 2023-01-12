@@ -1,10 +1,5 @@
 <?php
 
-
 namespace slvlr\covalent\Exception;
 
-class MissingArgumentException{
-
-
-
-}
+class MissingArgumentException{}

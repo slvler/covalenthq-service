@@ -1,20 +1,34 @@
 {
     "name": "slvlr/covalent",
     "license": "MIT",
+    "description": "covalenthq api",
+    "type": "package",
     "authors": [
         {
             "name": "slvlr"
         }
     ],
-    "require": {},
     "autoload": {
         "psr-4": {
             "slvlr\\covalent\\": "src/"
         }
     },
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^6.18.0",
+        "phpunit/phpunit": "^9.5",
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests"
+    },
     "extra": {
         "laravel": {
-            "providers": "slvlr\\covalent\\CovalentServiceProvider"
+            "providers": [
+                "slvlr\\covalent\\CovalentServiceProvider"
+            ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
