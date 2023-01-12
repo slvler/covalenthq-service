@@ -110,15 +110,6 @@ To install this package tou can use composer:
 ```
 
 
-
-
-
-### Testing
-
-```bash
-    composer test
-```
-
 ## Credits
 
 -   [slvler](https://github.com/slvler)
