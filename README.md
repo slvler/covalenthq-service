@@ -1,8 +1,8 @@
 # slvler - covalenthq Service
-<!--
-[![Latest Stable Version](http://poser.pugx.org/slvler/ether/v)](https://packagist.org/packages/slvler/ether)
-[![License](https://img.shields.io/github/license/slvler/etherscan-service)](https://packagist.org/packages/slvler/ether)
--->
+
+[![Version](http://poser.pugx.org/slvlr/covalent/version)](https://packagist.org/packages/slvlr/covalent)
+[![Latest Unstable Version](http://poser.pugx.org/slvlr/covalent/v/unstable)](https://packagist.org/packages/slvlr/covalent)
+[![License](http://poser.pugx.org/slvlr/covalent/license)](https://packagist.org/packages/slvlr/covalent)
 
 
 An api service for covalenthq.com
