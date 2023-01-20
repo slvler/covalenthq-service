@@ -109,6 +109,11 @@ To install this package tou can use composer:
     $covalenthq->getallChainStatuses();
 ```
 
+### Testing
+
+```bash
+    composer test
+```
 
 ## Credits
 
@@ -117,4 +122,4 @@ To install this package tou can use composer:
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/hs-qwerty/TMDB/blob/main/LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/slvler/covalenthq-service/blob/main/LICENSE.md) for more information.

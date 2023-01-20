@@ -1,8 +1,8 @@
 <?php
 
-namespace slvlr\covalent\Services;
+namespace slvler\covalent\Services;
 
-use slvlr\covalent\Http\Build;
+use slvler\covalent\Http\Build;
 
 trait Transactions
 {
