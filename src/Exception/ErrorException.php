@@ -2,4 +2,6 @@
 
 namespace slvler\covalent\Exception;
 
-class ErrorException{}
+class ErrorException
+{
+}

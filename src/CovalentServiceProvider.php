@@ -1,6 +1,5 @@
 <?php
 
-
 namespace slvler\covalent;
 
 use Illuminate\Support\ServiceProvider;
@@ -13,6 +12,7 @@ class CovalentServiceProvider extends ServiceProvider
             $this->publishResources();
         }
     }
+
     protected function publishResources()
     {
         $this->publishes([
@@ -20,4 +20,3 @@ class CovalentServiceProvider extends ServiceProvider
         ], 'covalent');
     }
 }
-
