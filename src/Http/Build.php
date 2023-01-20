@@ -1,6 +1,6 @@
 <?php
 
-namespace slvlr\covalent\Http;
+namespace slvler\covalent\Http;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;

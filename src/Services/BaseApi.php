@@ -1,7 +1,7 @@
 <?php
 
 
-namespace slvlr\covalent\Services;
+namespace slvler\covalent\Services;
 
 class BaseApi{
 

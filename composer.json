@@ -1,16 +1,22 @@
 {
-    "name": "slvlr/covalent",
+    "name": "slvler/covalent",
     "license": "MIT",
-    "description": "covalenthq api",
+    "description": "Laravel covalenthq.com api service",
     "type": "package",
     "authors": [
         {
-            "name": "slvlr"
+            "name": "slvler",
+            "email": "slvler@proton.me"
         }
     ],
     "autoload": {
         "psr-4": {
-            "slvlr\\covalent\\": "src/"
+            "slvler\\covalent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "slvler\\covalent\\Tests\\": "tests/"
         }
     },
     "require": {},
@@ -25,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "slvlr\\covalent\\CovalentServiceProvider"
+                "slvler\\covalent\\CovalentServiceProvider"
             ]
         }
     },
