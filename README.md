@@ -1,8 +1,9 @@
 # slvler - covalenthq Service
 
-[![Version](http://poser.pugx.org/slvlr/covalent/version)](https://packagist.org/packages/slvlr/covalent)
-[![Latest Unstable Version](http://poser.pugx.org/slvlr/covalent/v/unstable)](https://packagist.org/packages/slvlr/covalent)
-[![License](http://poser.pugx.org/slvlr/covalent/license)](https://packagist.org/packages/slvlr/covalent)
+[![tests](https://github.com/slvler/covalenthq-service/actions/workflows/tests.yml/badge.svg)](https://github.com/slvler/covalenthq-servicee/actions/workflows/tests.yml)
+[![Latest Stable Version](http://poser.pugx.org/slvler/covalent/v)](https://packagist.org/packages/slvler/covalent)
+[![Latest Unstable Version](http://poser.pugx.org/slvler/covalent/v/unstable)](https://packagist.org/packages/slvler/covalent)
+[![License](http://poser.pugx.org/slvler/covalent/license)](https://packagist.org/packages/slvler/covalent)
 
 
 An api service for covalenthq.com
