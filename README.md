@@ -4,6 +4,7 @@
 [![Latest Stable Version](http://poser.pugx.org/slvler/covalent/v)](https://packagist.org/packages/slvler/covalent)
 [![Latest Unstable Version](http://poser.pugx.org/slvler/covalent/v/unstable)](https://packagist.org/packages/slvler/covalent)
 [![License](http://poser.pugx.org/slvler/covalent/license)](https://packagist.org/packages/slvler/covalent)
+[![Total Downloads](http://poser.pugx.org/slvler/covalent/downloads)](https://packagist.org/packages/slvler/covalent)
 
 
 An api service for covalenthq.com
