@@ -26,13 +26,12 @@ To install this package tou can use composer:
     php artisan vendor:publish --tag=covalenthq
 ```
 
-- API key to be obtained from covalenthq.com address should be declared.
+
+- First of all we'll add the API key and API Url of the service we're using to our .env file of our project. API key to be obtained from covalenthq.com address should be declared.
 
 ```php
-    'covalent' => [
-        'base_url' => 'https://api.covalenthq.com/',
-        'api_key' => 'XXXXXXXXXXXXXXXXXXXXXXXX'
-    ]
+    COVALENTHQ_BASE_URL=https://api.covalenthq.com
+    COVALENTHQ_API_KEY=YOUR-API-KEY
 ```
 
 - This is how you can connect to the covalenthq service.
