@@ -1,8 +1,8 @@
 <?php
 
-namespace slvler\covalent\Tests\Unit;
+namespace Slvler\Covalent\Tests\Unit;
 
-use slvler\covalent\CovalentServiceProvider;
+use Slvler\Covalent\CovalentServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -18,7 +18,5 @@ class TestCase extends \Orchestra\Testbench\TestCase
         ];
     }
 
-    protected function getEnvironmentSetUp($app)
-    {
-    }
+    protected function getEnvironmentSetUp($app) {}
 }

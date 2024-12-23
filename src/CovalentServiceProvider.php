@@ -1,6 +1,6 @@
 <?php
 
-namespace slvler\covalent;
+namespace Slvler\Covalent;
 
 use Illuminate\Support\ServiceProvider;
 

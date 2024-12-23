@@ -1,43 +1,34 @@
 # covalenthq Service
-
 [![tests](https://github.com/slvler/covalenthq-service/actions/workflows/tests.yml/badge.svg)](https://github.com/slvler/covalenthq-servicee/actions/workflows/tests.yml)
-[![Latest Stable Version](https://poser.pugx.org/slvler/covalent/v)](https://packagist.org/packages/slvler/covalent)
-[![Latest Unstable Version](https://poser.pugx.org/slvler/covalent/v/unstable)](https://packagist.org/packages/slvler/covalent)
-[![License](https://poser.pugx.org/slvler/covalent/license)](https://packagist.org/packages/slvler/covalent)
+[![Latest Stable Version](https://img.shields.io/packagist/v/slvler/covalent.svg)](https://packagist.org/packages/slvler/covalent)
 [![Total Downloads](https://poser.pugx.org/slvler/covalent/downloads)](https://packagist.org/packages/slvler/covalent)
-
-
+[![License](https://poser.pugx.org/slvler/covalent/license)](https://packagist.org/packages/slvler/covalent)
 An api service for covalenthq.com
 
+## Requirements
+- PHP 8.2
+- Laravel 9.x | 10.x | 11.x
+
 ## Installation
-
 To install this package tou can use composer:
-
 ```bash
 composer require slvler/covalent
 ```
 
 ## Usage
-
 - First, you should extract the config/covalent.php file to the config folder.
-
 ```php
 php artisan vendor:publish --tag=covalenthq
 ```
-
-
 - First of all we'll add the API key and API Url of the service we're using to our .env file of our project. API key to be obtained from covalenthq.com address should be declared.
-
 ```php
 COVALENTHQ_BASE_URL=https://api.covalenthq.com
 COVALENTHQ_API_KEY=YOUR-API-KEY
 ```
-
 - This is how you can connect to the covalenthq service.
 ```php
 $covalenthq = new BaseApi();
 ```
-
 - Given chain_id and wallet address, return current token balances along with their spot prices. This endpoint supports a variety of token standards like ERC20, ERC721 and ERC1155.
 ```php
 $covalenthq->getBalancesForAddress('1','demo.eth');
@@ -104,15 +95,16 @@ $covalenthq->getallChainStatuses();
 ```
 
 ### Testing
-
 ```bash
 composer test
 ```
 
 ## Credits
-
 - [slvler](https://github.com/slvler)
 
 ## License
-
 The MIT License (MIT). Please see [License File](https://github.com/slvler/covalenthq-service/blob/main/LICENSE.md) for more information.
+
+## Contributing
+You're very welcome to contribute.
+Please see [CONTRIBUTING](https://github.com/slvler/covalenthq-service/blob/main/CONTRIBUTING.md) for details.

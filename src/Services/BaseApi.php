@@ -1,10 +1,10 @@
 <?php
 
-namespace slvler\covalent\Services;
+namespace Slvler\Covalent\Services;
 
 class BaseApi
 {
-    use Balance, NFT, Base, Transactions;
+    use Balance, Base, NFT, Transactions;
 
     public function getBalancesForAddress($chain_id, $address)
     {

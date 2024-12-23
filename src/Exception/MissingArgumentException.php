@@ -1,7 +1,5 @@
 <?php
 
-namespace slvler\covalent\Exception;
+namespace Slvler\Covalent\Exception;
 
-class MissingArgumentException
-{
-}
+class MissingArgumentException {}

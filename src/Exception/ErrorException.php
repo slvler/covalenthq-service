@@ -1,7 +1,5 @@
 <?php
 
-namespace slvler\covalent\Exception;
+namespace Slvler\Covalent\Exception;
 
-class ErrorException
-{
-}
+class ErrorException {}
