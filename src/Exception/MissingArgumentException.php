@@ -2,4 +2,6 @@
 
 namespace Slvler\Covalent\Exception;
 
-class MissingArgumentException {}
+class MissingArgumentException
+{
+}
