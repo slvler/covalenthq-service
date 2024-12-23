@@ -19,7 +19,7 @@ composer require slvler/covalent
 ## Usage
 - First, you should extract the config/covalent.php file to the config folder.
 ```php
-php artisan vendor:publish --tag=covalenthq
+php artisan vendor:publish --tag=covalent
 ```
 - First of all we'll add the API key and API Url of the service we're using to our .env file of our project. API key to be obtained from covalenthq.com address should be declared.
 ```php
